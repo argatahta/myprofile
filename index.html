@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Exo:700|Roboto" rel="stylesheet">
+    
+
+    <style>
+        body{
+            background-color: #3971ff;
+            
+        }
+        h1{
+            font-family: 'Exo', sans-serif;
+        }
+        h2{
+            font-family: 'Exo', sans-serif;
+            margin:0px;
+        }
+
+        h3{
+            font-family: 'Exo';
+            font-size: 20px;
+            
+        }
+        .home1 a{
+            color: white;
+        }
+        
+
+        #introduction{
+            background-color: #e6e6e6;
+            width:100%;
+            padding:25px;
+            float: left; 
+            color: #333
+        }
+        .socmed li{
+            float:left;
+            background-color: none;
+            margin-right: 10px;
+            border-radius: 10px;
+            
+        }
+        .socmed li a{
+            padding-left: 0px;
+            
+        }
+        .socmed li a i{
+            width: 20px;
+            
+        }
+        .socmed{
+            list-style: none;
+            box-sizing: border-box;
+            float:left;
+            width: 100%;
+            
+        }
+        .content1-2{
+            margin-top:20px;
+        }
+        .content1-3 p{
+            margin-bottom: 16px;
+            float: left;
+            width: 100%;
+        }
+        .content2-2{
+            padding-left: 30px;
+            float:right;
+        }
+        
+        #personalprofile{
+            background-color: #ffffff;
+            width:100%;
+            padding:25px;
+            float: left; 
+            word-wrap:break-word;
+        }
+        #technicalskills{
+            background-color: #ffffff;
+            width:100%;
+            padding:25px;
+            float: left; 
+            word-wrap:break-word;
+        }
+        #workexperience{
+            background-color: #ffffff;
+            width:100%;
+            padding:25px;
+            float: left; 
+            word-wrap:break-word;
+        }
+        #education{
+            background-color: #ffffff;
+            width:100%;
+            padding:25px;
+            float: left; 
+            word-wrap:break-word;
+        }
+
+        #contactme{
+            background-color: #ffffff;
+            width:100%;
+            padding:25px;
+            float: left; 
+            word-wrap:break-word;
+        }
+        .tombolkontak{
+            margin-top: 10px;
+            color:#ffffff;
+            background-color: #3971ff;
+        }
+       
+        .garis hr{
+            border:0.5px solid#3971ff;
+            float:left;
+            width: 100%;
+            padding:0px;
+            margin:0px;
+        }
+
+        .futer{
+            
+            color: #ffffff;
+            font-size: 10px;
+            
+        }
+        /* SKILL BAR */
+        .skillbar {
+            position: relative;
+            display: block;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        .skillbar-bar:before {
+            background: #eee;
+            content: "";
+            height: 3px;
+            position: absolute;
+            width: 100%;
+            z-index: -1;
+        }
+
+        .skillbar-bar {
+            height: 3px;
+            width: 0px;
+            background: #3971ff;
+            transition-property: width, background-color;
+        }
+
+        .skillbar-title {
+            color: #323232;
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            display: inline-block;
+        }
+
+        .skill-bar-percent {
+            float: right;
+            display: inline-block;
+            color: #323232;
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        /* CENTERING ONLY */
+
+        .wrapper {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+        /* SKILL BAR */
+
+    </style>
+    
+</head>
+<body>
+
+        <nav class="navbar navbar-default" role="navigation" style="border-radius: 0;margin:0px; border:none;background-color:#3971ff;">
+                
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="true">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <!--<a class="navbar-brand" href="#">Start Bootstrap</a>-->
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="navbar-collapse navbar-right collapse in home1" id="bs-example-navbar-collapse-1" aria-expanded="true" style="margin:0px;">
+                            <ul class="nav nav-pills nav-justified " >
+                                    <li role="presentation"><a href="#introduction">About me</a></li>
+                                    <li role="presentation"><a href="#personalprofile"> Profile</a></li>
+                                    <li role="presentation"><a href="#technicalskills">Skills</a></li>
+                                    <li role="presentation"><a href="#workexperience">Experience</a></li>
+                                    <li role="presentation"><a href="#education">Education</a></li>
+                                    <li role="presentation"><a href="#contactme">Contact</a></li>
+                            </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                
+                <!-- /.container -->
+            </nav>
+        
+    <!-- introduction content -->
+    <div id='introduction'>
+        <!-- nama -->
+        <div class = 'col-sm-4 col-xs-12 content1-1'>
+            <h1>Arga<br> Tahta</h1>
+            <h3>Web Developer</h3>
+        </div>
+        <!-- Gambar dan kata-kata -->
+        <div class = 'col-sm-4 col-xs-12 content1-2'> 
+                <div class="media">
+                        <div class="media-left">
+                          <a href="#">
+                            <img class="media-object img-thumbnail" src="img/fotoarga.JPG" alt="..."style="height: 128px;" >
+                          </a>
+                        </div>
+                        <div class="media-body">
+                                Hardworker, passionate, detail, and a team player are his strength for being a Web Developer. 
+                  
+                        </div>
+                      </div>
+            
+           
+        </div>
+        <!-- socmed account dan data diri -->
+        <div class = 'col-sm-4 col-sm-12 content1-3'> 
+            <ul class='socmed' style="padding-left:0px;">
+                <li><a class="btn btn-social-icon btn-sm btn-twitter" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-sm']);"><i class="fa fa-twitter"></i></a></li>
+                <li><a class="btn btn-social-icon btn-sm btn-facebook" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-sm']);"><i class="fa fa-facebook"></i></a></li>
+                <li><a class="btn btn-social-icon btn-sm bhub" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-sm']);"><i class="fa fa-github"></i></a></li>
+                <li><a class="btn btn-social-icon btn-sm btn-instagram" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-sm']);"><i class="fa fa-instagram"></i></a></li>
+                <li><a class="btn btn-social-icon btn-sm btn-linkedin" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-sm']);"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+            
+            <p>
+                <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                
+                <b>argatahta@hotmail.com</b>
+                <br>
+                <span class="glyphicon glyphicon-cloud" aria-hidden="true"></span>
+                
+                <b>www.argatahta.com</b>
+                <br>
+                <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+                
+                <b>(+62) 085716777334</b>
+                <br>
+                <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+                
+                <b>Menteng Residence FC 9 no 3 <br>&nbsp&nbsp&nbsp&nbsp&nbspBintaro Sektor 7<br>&nbsp&nbsp&nbsp&nbsp&nbspTangerang Selatan</b></p>
+        </div>
+    </div>
+
+    
+    <!-- Line Break -->
+    <div class='garis'>
+        <hr>
+    </div>
+    <!-- Personal Profile -->
+    <div id='personalprofile'>
+
+        <div class= 'col-sm-4 col-xs-12 content2-1'>
+        <h2>Personal Profile</h2>
+        <br>
+        <p class="hidden-xs">A few words about me</p>
+        </div>
+
+        <div class= 'col-sm-8 col-xs-12 content2-2' >
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+            </p>
+        </div>
+    </div>
+
+   
+    <!-- Line Break -->
+    <div class='garis'>
+        <hr>
+    
+    </div>
+    <!-- Technical Skills -->
+    <div id='technicalskills'>
+
+        <div class= 'col-sm-4 col-xs-12 content3-1'>
+            <h2>Technical Skills</h2>
+            <br>
+            <p class="hidden-xs">This is what i am good at</p>
+        </div>
+        
+        <div class="col-sm-8 col-xs-12">
+            <!-- Penjelasan -->
+            <div class="col-xs-12">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+
+            <!-- skillbar -->
+            <div class="col-xs-12" style="margin-top:10px;">
+                    
+                <div class="skillbar" data-percent="70%">
+                    <div class="skillbar-title">Web design</div>
+                    <div class="skill-bar-percent">70%</div>
+                    <div class="skillbar-bar" style="width: 70%;"></div>
+                </div>
+
+                <div class="skillbar" data-percent="85%">
+                    <div class="skillbar-title">Javascript</div>
+                    <div class="skill-bar-percent">85%</div>
+                    <div class="skillbar-bar" style="width: 85%;"></div>
+                </div>
+
+                <div class="skillbar" data-percent="65%">
+                    <div class="skillbar-title">Digital Marketing</div>
+                    <div class="skill-bar-percent">65%</div>
+                    <div class="skillbar-bar" style="width: 65%;"></div>
+                </div>
+
+                <div class="skillbar" data-percent="90%">
+                    <div class="skillbar-title">Teamwork</div>
+                    <div class="skill-bar-percent">90%</div>
+                    <div class="skillbar-bar" style="width: 90%;"></div>
+                </div>
+
+            </div>
+
+        </div>
+            
+
+    </div>
+    <!-- Line Break -->
+    <div class='garis'>
+        <hr>
+    </div>
+    <!-- Work Experiece -->
+    <div id="workexperience">
+
+        <div class= 'col-sm-4 col-xs-12 content4-1'>
+            <h2>Work Experience</h2>
+            <br>
+            <p class="hidden-xs">Previous employers</p>
+        </div>
+
+        <div class='col-sm-8 col-xs-12'>
+           <div class="col-sm-6 col-xs-12">
+               <h4 style="margin-top:0px;">Front End Developer Manager</h4>
+               <p >Company</p>
+               <br>
+               <p><b>Period: </b>2011-2015</p>
+               <p><b>Job type: </b>Full time</p>
+               <p><b>Reference: </b> Mr.Mahmud</p>
+           </div>
+           <div class='col-sm-6 col-xs-12'>
+               <p> Penjelasan apapun yang terjadi terhadap pekerjaan di perusahaan tersebut</p>
+               <ul>
+                    <li>List Jobdesk</li>
+                    <li>List Jobdesk</li>
+                    <li>List Jobdesk</li>
+                    <li>List Jobdesk</li>
+                    <li>List Jobdesk</li>
+               </ul>
+           </div>
+        </div>
+
+        <div class='col-sm-8 col-xs-12' style="float:right;">
+            <hr>
+                <div class="col-sm-6 col-xs-12">
+                    <h4 style="margin-top:0px;">Front End Developer Manager</h4>
+                    <p >Company</p>
+                    <br>
+                    <p><b>Period: </b>2011-2015</p>
+                    <p><b>Job type: </b>Full time</p>
+                    <p><b>Reference: </b> Mr.Mahmud</p>
+                </div>
+                <div class='col-sm-6 col-xs-12'>
+                    <p> Penjelasan apapun yang terjadi terhadap pekerjaan di perusahaan tersebut</p>
+                    <ul>
+                         <li>List Jobdesk</li>
+                         <li>List Jobdesk</li>
+                         <li>List Jobdesk</li>
+                         <li>List Jobdesk</li>
+                         <li>List Jobdesk</li>
+                    </ul>
+                </div>
+        </div>
+
+        <div class='col-sm-8 col-xs-12' style="float:right;">
+                <hr>
+                    <div class="col-sm-6 col-xs-12">
+                        <h4 style="margin-top:0px;">Front End Developer Manager</h4>
+                        <p >Company</p>
+                        <br>
+                        <p><b>Period: </b>2011-2015</p>
+                        <p><b>Job type: </b>Full time</p>
+                        <p><b>Reference: </b> Mr.Mahmud</p>
+                    </div>
+                    <div class='col-sm-6 col-xs-12'>
+                        <p> Penjelasan apapun yang terjadi terhadap pekerjaan di perusahaan tersebut</p>
+                        <ul>
+                             <li>List Jobdesk</li>
+                             <li>List Jobdesk</li>
+                             <li>List Jobdesk</li>
+                             <li>List Jobdesk</li>
+                             <li>List Jobdesk</li>
+                        </ul>
+                    </div>
+            </div>
+
+    </div>
+    <!-- Line Break -->
+    <div class='garis'>
+            <hr>
+        </div>
+    <!-- Education -->
+    <div id="education">
+            
+                    <div class= 'col-sm-4 col-xs-12 content5-1'>
+                        <h2 >Education</h2>
+                        <br>
+                        <p class="hidden-xs">An overview of my educational background</p>
+                    </div>
+            
+                    <div class='col-sm-8 col-xs-12'>
+                      <h4 style="margin-top:0px;">
+                         Harvard University
+                      </h4>
+                      <p><i>
+                         Bachelor of economy degree in Marketing. Cum Laude.
+                        </i>
+                      </p>
+                      <p>
+                         Lulus dengan predikat cum laude dari harvard merupakan prestasi tertinggi yang pernah saya alami.
+                      </p>
+                    </div>
+            
+                    <div class='col-sm-8 col-xs-12' style="float:right;">
+                        <hr>
+                        <h4>
+                            Harvard University
+                        </h4>
+                        <p>
+                            <i>
+                            Bachelor of economy degree in Marketing. Cum Laude.
+                            </i>
+                        </p>
+                        <p>
+                            Lulus dengan predikat cum laude dari harvard merupakan prestasi tertinggi yang pernah saya alami.
+                        </p>
+                           
+                    </div>
+            
+                    <div class='col-sm-8 col-xs-12' style="float:right;">
+                        <hr>
+                        <h4>
+                            Harvard University
+                        </h4>
+                        <p>
+                            <i>
+                            Bachelor of economy degree in Marketing. Cum Laude.
+                            </i>
+                        </p>
+                        <p>
+                            Lulus dengan predikat cum laude dari harvard merupakan prestasi tertinggi yang pernah saya alami.
+                        </p>
+                     </div>
+            
+    </div>
+    <!-- Line Break -->
+    <div class='garis'>
+            <hr>
+        </div>
+    <!-- contactme -->
+    <div id="contactme">
+            <div class= 'col-sm-4 col-xs-12 content6-1'>
+                <h2>Contact Me</h2>
+                <br>
+                <p class="hidden-xs">Let's get in touch</p>
+            </div>
+            <div class='col-sm-4 col-xs-12 content6-2'>
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            
+                            <div class="col-xs-12">
+                            <input type="name" class="form-control" id="inputname" placeholder="Your name...">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="col-xs-12">
+                                <input type="email" class="form-control" id="inputemail" placeholder="Your email...">
+                            </div>
+                        </div>
+
+                        
+                            <textarea class="form-control contact-input" placeholder="Your message..." rows="5"></textarea>
+                            <button class="btn btn-default tombolkontak" type="submit"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>&nbsp Contact me</button>
+                         
+                        
+                    </form>
+            </div>
+            <div class='col-xs-4 content6-3'></div>
+    </div>
+
+    <footer class="footer futer">
+        <div class="container">
+            <span>Copyright © Gunung Tahta 2017</span>
+        </div>
+    </footer>
+
+
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
